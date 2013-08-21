@@ -1,0 +1,14 @@
+#include <stdio.h>
+#define MAX_ROW=5;
+#define MAX_COL=5;
+struct point{int x;int y;} stack[512];
+int top=0;
+void push(point p){
+  stack[top++]=p;
+}
+point pop(){
+  return stack[--top];
+}
+int main(void){
+
+}
