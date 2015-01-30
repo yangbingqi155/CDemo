@@ -6,8 +6,21 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	printf("Hello world.");
-	getchar();
+
+	//Print the value of EOF
+	printf("The value of EOF is :%d \n", EOF);
+
+	int c = getchar();
+
+	while (c != EOF){
+		putchar(c);
+		printf("The value of getchart() is : %d \n", c);
+		c = getchar();
+		printf("The value of (getchart()!=EOF) is : %d \n",c != EOF);
+	}
+	
+	
+
 	return 0;
 }
 
